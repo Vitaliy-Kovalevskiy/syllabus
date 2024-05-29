@@ -50,7 +50,7 @@ if(isset($_POST['submit'])) {
     $section->addText('Форма контролю: ' . $_POST['assessment_form'], array('size' => 14, 'name' => 'Times New Roman'), array('align' => Jc::CENTER));
 
     // Збереження документу
-    $filename = 'Syllabus.docx';
+    $filename = 'Силабус.docx';
     $objWriter = IOFactory::createWriter($phpWord, 'Word2007');
     $objWriter->save($filename);
 
